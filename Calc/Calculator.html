@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Calculator_Style.css">
+    <script type="text/javascript" src="Calculator_JS.js"></script>
+</head>
+<body>
+    <h1>C a L c U l A t O r</h1>
+        <input type="text" id="input-box" name="input" onkeypress="keyPress(event)" placeholder="input expression" />
+        <input type="text" id="result-box" name="result" placeholder="Result!"/>
+        <input type="text" id="history-display-box" name="history" placeholder="History" readonly/>
+        <table>
+                <tr>
+                    <th><button value="9" onclick="digit(this)">9</button></th>
+                    <th><button value="8" onclick="digit(this)">8</button></th>
+                    <th><button value="7" onclick="digit(this)">7</button></th>
+                    <th><button value="+" onclick="digit(this)">+</button></th>
+                </tr>
+                <tr>
+                  <td><button value="6" onclick="digit(this)">6</button></td>
+                  <td><button value="5" onclick="digit(this)">5</button></td>
+                  <td><button value="4" onclick="digit(this)">4</button></td>
+                  <td><button value="-" onclick="digit(this)">-</button></th>
+                </tr>
+                <tr>
+                  <td><button value="3" onclick="digit(this)">3</button></td>
+                  <td><button value="2" onclick="digit(this)">2</button></td>
+                  <td><button value="1" onclick="digit(this)">1</button></td>
+                  <td><button value="*" onclick="digit(this)">*</button></td>
+                </tr>
+                <tr>
+                    <td><button value="" onClick="window.location.reload()">clr</button></td>
+                    <td><button value="=" onclick="digit(this)">=</button></td>
+                    <td><button id="history-box"  onclick="displayHistory()">History</button></td>
+                    <td><button value="/" onclick="digit(this)">/</button></td>
+                </tr>
+              </table>
+</body>
+</html>

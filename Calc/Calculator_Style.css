@@ -1,0 +1,36 @@
+body {
+    background-color: #000000;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 2px solid red;
+    padding: 1rem;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+#input-box {
+    margin-left: 40%;
+    margin-bottom: 1%;
+}
+
+button {
+    padding: 2rem;
+    justify-items: center;
+}
+
+input {
+    padding: 1rem;
+    width: auto;
+    justify-self: center;
+    margin-left: 1rem;
+}
+
+h1  {
+    text-align: center;
+    color: #FFFFFF;
+}
